@@ -6,9 +6,8 @@ from src.create_mapping import create_keyword_to_testcase_mapping
 from src.predict_tests import predict_affected_tests
 
 argument_parser = argparse.ArgumentParser(
-    prog='python -m azure_devops_integration',
-    description='Publishes messages for Azure DevOps builds \
-        to Microsoft Teams')
+    prog='python main.py',
+    description='Predicts affected tests using a pull request title')
 argument_parser.add_argument(
     "-o", "--organization",
     action="store",
@@ -24,7 +23,7 @@ argument_parser.add_argument(
 argument_parser.add_argument(
     "-t", "--pat",
     action="store",
-    help="Azure DevOps personal access token with read to builds")
+    help="Azure DevOps personal access token with read to code")
 argument_parser.add_argument(
     "-r", "--repository_id",
     action="store",
