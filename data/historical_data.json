@@ -1,38 +1,42 @@
-[
-    {
-        "pr_title": "WebHMI findings fixes part 2",
-        "affected_tests": ["WHMI"]
-    },
-    {
-        "pr_title": "Syslog handling improvements",
-        "affected_tests": ["Verify Syslog Message For Parameter Change"]
-    },
-    {
-        "pr_title": "XDEFLPDEF FD: harmonization fixes, clean up, hiding fixes",
-        "affected_tests": ["Write Configuration"]
-    },
-    {
-        "pr_title": "Move event variables to audit data",
-        "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents"]
-    },
-    {
-        "pr_title": "Update platform translations",
-        "affected_tests": ["Navigate To WHMI Language Menu And Change Language"]
-    },
-    {
-        "pr_title": "Audit Trail JSON mapping file",
-        "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents", "Validate Report Summary Exportation"]
-    },
-    {
-        "pr_title": "Secure MMS parameter enum change and functionality",
-        "affected_tests": ["Write Numerical Parameters To Ied"]
-    },   
-    {
-        "pr_title": "Add handling of WebHMI mode",
-        "affected_tests": ["WHMI"]
-    },
-    {
-        "pr_title": "Factory install support for REX640 2.0",
-        "affected_tests": ["Update Software", "Check Factory Retest TFTP Boot", "Check Factory Restore FTP Communication"]
-    }
-]
+{
+    "all_test_cases": ["Set Target IED On", "Update Software", "Check Factory Retest TFTP Boot", "Check Factory Restore FTP Communication", "Update Software Customer", "Restart Target IEDs", "Log SW Version", "Check IED Communication", "Download Latest ConnPack", "Install ConnPack", "Download Latest ConnPack Customer", "Install ConnPack Customer", "Update HMI Firmware", "Check IED Internal Faults Health And Warning Status", "Check IED SW Version Configuration And Ordercode", "Verify Login With Invalid Credentials Fails", "Verify Login Via FTP", "Verify Upload Fails For Viewer", "Verify Syslog Message For Parameter Change", "Check IED Time Synchronization", "Check Customer Support Data Contents", "Log Execution Times", "Validate Navigate To Monitoring", "Validate Navigate To Information", "Check Software Version", "Validate Navigate To Self-Supervision", "Validate Navigate To Single Line Diagrams", "Validate Navigate To Clear", "Validate Navigate To Password Change", "Validate Navigate To About", "Validate Navigate To Measurements", "Validate Navigate To Phasor Diagrams", "Validate Navigate To Events", "Validate Navigate To Disturbance Records", "Validate Navigate To Fault Records", "Validate Navigate To Load Profile Record", "Validate Navigate To Report Summary", "Validate Navigate To Import Export Settings", "Validate Navigate To Parameter List", "Validate Navigate To Parameters", "Validate Navigate To IED Status", "Validate Navigate To Self-Supervision Through Device-Monitoring Side Menu", "Logout From System", "Verify Login Fails With Wrong Credentials", "Validate Navigate To Monitoring", "Validate Navigate To Information", "Check Software Version", "Validate Navigate To Self-Supervision", "Validate Navigate To Single Line Diagrams", "Validate Navigate To Clear", "Validate Navigate To Password Change", "Validate Navigate To About", "Validate Navigate To Measurements", "Validate Navigate To Phasor Diagrams", "Validate Navigate To Events", "Validate Navigate To Disturbance Records", "Validate Navigate To Fault Records", "Validate Navigate To Load Profile Record", "Validate Navigate To Report Summary", "Validate Navigate To Import Export Settings", "Validate Navigate To Parameter List", "Validate Navigate To Parameters", "Validate Navigate To Self-Supervision Through Device-Monitoring Side Menu", "Validate Navigate To IED Status", "Logout From System", "Verify Login Fails With Wrong Credentials", "Create New TAS Project", "Import Application Configuration From File", "Import Production Parameters From File", "Import Graphical Display Editor Diagram From File", "Import FPN Options Template", "Configuration FPN", "Import Application Configuration From File", "Import Production Parameters From File", "Write Configuration To IED", "Write FPN Configuration To IED", "Update IED Remotely", "Set Server IP", "Set Time Sync", "Update Network2 IP Address", "Read Configuration From IED", "Read And Clear All Fault Records", "BO Trigger Disturbance Handling Tool", "Manual Trigger Disturbance Handling Tool", "Communication Management Tool", "License Update Tool", "Read Newest Events From IED", "Clear All Events In PCM600", "Clear All Events From IED", "Write P12 Certificate Bundle To IED", "Delete Certificate And Rewrite Back", "FPN Mapping SE -> SP Checks", "FPN Mapping SP -> SG Checks", "Verify UDN Texts Are Shown Correctly In Parameter Setting", "Verify UDN Texts Are Shown Correctly In Channel ID", "Validate Dashboard View Looks As Expected", "Validate Single Line Diagram On Dashboard View In IEC Format", "Validate Single Line Diagram Image Properties In ANSI Format", "Validate Device Information", "Validate Clear Menu", "Change Password And Revert To Default Using Viewer Credentials", "Validate Single Line Diagram Image Properties In IEC Format", "Validate Single Line Diagram Image Properties In ANSI Format", "Validate Single Line Diagram Matches Parameter Changes Made In Real Time", "Validate Fault Record Functionality", "Validate Events Export", "Validate View Per Page Selection", "Clear Events and Verify Events List Is Empty", "Validate Disturbance Records Triggering", "Validate Disturbance Records Export", "Validate Single Disturbance Record Deletion", "Validate All Disturbance Records Deletion", "Validate Load Profile Record Functionalities", "Validate Parameter Search", "Validate Changing Parameters", "Validate WHMI Timeout", "Validate Parameter List Filter Functionality", "Validate Import And Export Settings", "Modify Xrio File Extension And Attempt Import With Different File Types", "Replace Whole Xrio File Content And Attempt Import To IED", "Modify IED Identifier In Xrio File And Attempt Import To IED", "Validate Report Summary Exportation", "Validate Navigate To Measurements", "Validate Navigate To Phasor Diagrams", "Validate Unauthorized Access Attempt With Incorrect Login Information", "Validate Successful Login With Valid Credentials", "Verify Inactive User Logout After 60 Seconds", "Retrieve, Decompress And Decrypt Customer Support Data", "Verify Audit Log Does Not Contain Unauthorized Login Credentials", "Navigate To WHMI Language Menu And Change Language", "Validate Viewer Permissions", "Validate Operator Permissions", "Validate Engineer Permissions", "Validate Administrator Permissions", "Measure Import/Export Load Time", "Calculate WHMI Load Time", "Validate Dashboard View Looks As Expected", "Validate Correct Page Navigation From Header Link", "Validate Single Line Diagram On Dashboard View In IEC Format", "Validate Single Line Diagram Image Properties In ANSI Format", "Create New TAS Project", "Import IED_SECOND Application Configuration From File", "Import IED_SECOND Production Parameters From File", "Import IED_SECOND Graphical Display Editor Diagram From File", "Import IED_FIRST Application Configuration From File", "Import IED_FIRST Production Parameters From File", "Import IED_FIRST Graphical Display Editor Diagram From File", "GOOSE ICT Config For IED8 As Publisher", "GOOSE ACT Config For IED3 As subcriber", "GOOSE ICT Config For IED3 As Publisher", "GOOSE ACT Config For IED8 As subcriber", "Easy GOOSE Config IED_FIRST", "Save ACT Of IED_SECOND For Bug", "Easy GOOSE Config IED_SECOND", "Save ACT Of IED_FIRST For Bug", "GOOSE SMT Config In IED_SECOND As subcriber", "GOOSE SMT Config In IED_FIRST As subcriber", "SMV ACT Config For IED_FIRST As Sender", "SMV ACT Config For IED_SECOND As Receiver", "SMV ICT Config For IED_FIRST As Sender", "SMV SMT Config In IED_SECOND As Receiver", "Write Configuration To IED", "Set Server IP", "Set Time Sync", "Goose IED_SECOND To IED_FIRST DB Check", "Goose IED_SECOND To IED_FIRST BI Check", "Goose IED_FIRST To IED_SECOND BI Check", "Goose IED_FIRST To IED_SECOND DB Check", "SMV IED_FIRST To IED_SECOND Check", "Check Rated Frequency Modes In Different Delay", "Check Time Sync", "Check File Transfer Speed", "Create Data Point Dictionary", "Write Numerical Parameters To Ied", "Write Min Value Numerical Parameters To Ied", "Write Max Value Numerical Parameters To Ied", "Write Intentionally Too Small Numerical Parameters To Ied", "Write Intentionally Too High Numerical Parameters To Ied", "Write Intentionally Too Densely Numerical Parameters To Ied", "Write Initial Parameters To Ied", "Check MMS reporting", "Verify Line Differential Communication", "Verify Line Differential Health Status", "Load Test With Custom Properties", "Load Test With Tearing Down On Shutdown", "Check JMeter Log And Analyze Result", "Download Customer Support Data", "Log Installed Versions", "Check Syslog Contents", "Check Memory leak", "Disable User Activity Log", "Set Target IED Off", "Test RFB Connection", "Test Menu Text", "Test Menu Options", "Test Menu Localization", "Copy All Pictures To Results", "Check IED And HMI SW Version", "Access Alarms Page", "Access Load Profile Records And Use Select Tool", "Change IED Switch Statuses", "Parameter Change And Revert Changes", "Product Type Name Is Available On HMI Module", "Trigger And Delete Disturbance Record", "Use Timeline Views Quicklink To Events Page", "Copy All Squish Results To Results", "WHMI"],
+    "historical_data": 
+    [
+        {
+            "pr_title": "WebHMI findings fixes part 2",
+            "affected_tests": ["WHMI"]
+        },
+        {
+            "pr_title": "Syslog handling improvements",
+            "affected_tests": ["Verify Syslog Message For Parameter Change"]
+        },
+        {
+            "pr_title": "XDEFLPDEF FD: harmonization fixes, clean up, hiding fixes",
+            "affected_tests": ["Write Configuration"]
+        },
+        {
+            "pr_title": "Move event variables to audit data",
+            "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents"]
+        },
+        {
+            "pr_title": "Update platform translations",
+            "affected_tests": ["Navigate To WHMI Language Menu And Change Language"]
+        },
+        {
+            "pr_title": "Audit Trail JSON mapping file",
+            "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents", "Validate Report Summary Exportation"]
+        },
+        {
+            "pr_title": "Secure MMS parameter enum change and functionality",
+            "affected_tests": ["Write Numerical Parameters To Ied"]
+        },   
+        {
+            "pr_title": "Add handling of WebHMI mode",
+            "affected_tests": ["WHMI"]
+        },
+        {
+            "pr_title": "Factory install support for REX640 2.0",
+            "affected_tests": ["Update Software", "Check Factory Retest TFTP Boot", "Check Factory Restore FTP Communication"]
+        }
+    ]
+}
