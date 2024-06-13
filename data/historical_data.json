@@ -37,6 +37,10 @@
         {
             "pr_title": "Factory install support for REX640 2.0",
             "affected_tests": ["Update Software", "Check Factory Retest TFTP Boot", "Check Factory Restore FTP Communication"]
+        },
+        {
+            "pr_title": "CEPNDF New instance added",
+            "affected_tests": ["Create New TAS Project", "Import Application Configuration From File", "Import Production Parameters From File", "Write Configuration To IED"]
         }
     ]
 }
