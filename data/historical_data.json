@@ -1,0 +1,38 @@
+[
+    {
+        "pr_title": "WebHMI findings fixes part 2",
+        "affected_tests": ["WHMI"]
+    },
+    {
+        "pr_title": "Syslog handling improvements",
+        "affected_tests": ["Verify Syslog Message For Parameter Change"]
+    },
+    {
+        "pr_title": "XDEFLPDEF FD: harmonization fixes, clean up, hiding fixes",
+        "affected_tests": ["Write Configuration"]
+    },
+    {
+        "pr_title": "Move event variables to audit data",
+        "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents"]
+    },
+    {
+        "pr_title": "Update platform translations",
+        "affected_tests": ["Navigate To WHMI Language Menu And Change Language"]
+    },
+    {
+        "pr_title": "Audit Trail JSON mapping file",
+        "affected_tests": ["Check Customer Support Data Contents", "Check Syslog Contents", "Validate Report Summary Exportation"]
+    },
+    {
+        "pr_title": "Secure MMS parameter enum change and functionality",
+        "affected_tests": ["Write Numerical Parameters To Ied"]
+    },   
+    {
+        "pr_title": "Add handling of WebHMI mode",
+        "affected_tests": ["WHMI"]
+    },
+    {
+        "pr_title": "Factory install support for REX640 2.0",
+        "affected_tests": ["Update Software", "Check Factory Retest TFTP Boot", "Check Factory Restore FTP Communication"]
+    }
+]
