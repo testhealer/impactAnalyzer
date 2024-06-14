@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Impact Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PR Impact Prediction</h1>
+        <form action="/" method="post">
+            <label for="pr_title">Enter PR Title:</label>
+            <input type="text" id="pr_title" name="pr_title" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+            <h2>Predicted Impacted Tests:</h2>
+            <ul>
+                {% for test in prediction %}
+                    <li>{{ test }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

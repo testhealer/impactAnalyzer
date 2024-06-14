@@ -1,5 +1,5 @@
-import json
 from src.extract_keywords import extract_keywords
+from src.create_mapping import create_keyword_to_testcase_mapping
 
 def predict_affected_tests(pr_title, keyword_to_testcases_mapping):
     keywords = extract_keywords(pr_title)
@@ -16,10 +16,12 @@ def predict_affected_tests(pr_title, keyword_to_testcases_mapping):
     return list(impacted_tests)
 
 if __name__ == "__main__":
+    import json
+
     with open('data/historical_data.json') as f:
         historical_data = json.load(f)
 
-    pr_title = "Resolve authentication problem in user login"  #for test, to be removed
+    pr_title = "Resolve authentication problem in user login"
     keyword_to_testcases_mapping = create_keyword_to_testcase_mapping(historical_data)
     impacted_tests = predict_affected_tests(pr_title, keyword_to_testcases_mapping)
     print(impacted_tests)
